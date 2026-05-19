@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusGaming</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-links">
+      <a href="#">Videos</a>
+      <a href="#">Reviews</a>
+      <a href="#">Trailers</a>
+      <a href="#">Esports</a>
+      <a href="#">Forums</a>
+    </div>
+    <div class="topbar-right">
+      <a href="#">RSS</a>
+      <a href="#">Newsletter</a>
+      <a href="#" class="signin-btn">SIGN IN</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">NEXUS<span>GAMING</span></div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search games, reviews, trailers...">
+      <button id="searchBtn">&#128269;</button>
+    </div>
+    <div class="header-right">
+      <a href="#">&#9654; Watch Live</a>
+      <a href="#">&#9993; Subscribe</a>
+      <a href="#">&#9881;</a>
+    </div>
+  </header>
+
+  <!-- MAIN NAV -->
+  <nav>
+    <ul class="nav-tabs" id="mainNav">
+      <li><a href="#" class="active" data-page="home">Home</a></li>
+      <li><a href="#" data-page="videos">Videos</a></li>
+      <li class="dropdown">
+        <a href="#">Reviews &#9660;</a>
+        <div class="dropdown-menu">
+          <a href="#">Game Reviews</a>
+          <a href="#">Hardware Reviews</a>
+          <a href="#">Top Rated</a>
+          <a href="#">User Reviews</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Trailers &#9660;</a>
+        <div class="dropdown-menu">
+          <a href="#">Latest Trailers</a>
+          <a href="#">Gameplay Videos</a>
+          <a href="#">Teasers</a>
+          <a href="#">Reveals</a>
+        </div>
+      </li>
+      <li><a href="#" data-page="news">News</a></li>
+      <li><a href="#" data-page="esports">Esports</a></li>
+      <li class="dropdown">
+        <a href="#">Games &#9660;</a>
+        <div class="dropdown-menu">
+          <a href="#">PC</a>
+          <a href="#">PlayStation</a>
+          <a href="#">Xbox</a>
+          <a href="#">Nintendo</a>
+          <a href="#">Mobile</a>
+        </div>
+      </li>
+      <li><a href="#" data-page="community">Community</a></li>
+    </ul>
+  </nav>
+
+  <!-- SUB-NAV -->
+  <div class="subnav" id="subnav">
+    <a href="#" class="active" data-genre="all">All</a>
+    <a href="#" data-genre="fps">FPS</a>
+    <a href="#" data-genre="rpg">RPG</a>
+    <a href="#" data-genre="action">Action</a>
+    <a href="#" data-genre="sports">Sports</a>
+    <a href="#" data-genre="strategy">Strategy</a>
+    <a href="#" data-genre="horror">Horror</a>
+    <a href="#" data-genre="indie">Indie</a>
+    <a href="#" data-genre="upcoming">Upcoming</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="main-grid">
+
+      <!-- LEFT CONTENT -->
+      <div class="content-left">
+
+        <!-- HERO FEATURED -->
+        <div class="hero" id="heroSection">
+          <div class="hero-img bg-game1">
+            <div class="hero-icon">&#127918;</div>
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="play-btn" id="heroPlayBtn"></div>
+          <div class="hero-content">
+            <div class="hero-badge">&#9654; FEATURED TRAILER</div>
+            <div class="hero-title">PHANTOM WARZONE 2 — Official Gameplay Reveal Trailer</div>
+            <div class="hero-meta">
+              <span>ACTION / FPS</span> &nbsp;&#8226;&nbsp; 4.2M views &nbsp;&#8226;&nbsp; 2 hours ago
+            </div>
+          </div>
+        </div>
+
+        <!-- TRAILERS SECTION -->
+        <div class="section-header">
+          <div class="section-title">Latest Trailers</div>
+          <a href="#" class="see-all">See All &rsaquo;</a>
+        </div>
+
+        <div class="content-tabs" id="trailerTabs">
+          <div class="content-tab active" data-tab="all">All Trailers</div>
+          <div class="content-tab" data-tab="gameplay">Gameplay</div>
+          <div class="content-tab" data-tab="teasers">Teasers</div>
+          <div class="content-tab" data-tab="reveals">Reveals</div>
+          <div class="content-tab" data-tab="dlc">DLC</div>
+        </div>
+
+        <div class="video-grid" id="trailersGrid"></div>
+
+        <!-- AD BANNER -->
+        <div class="ad-banner">ADVERTISEMENT</div>
+
+        <!-- REVIEWS SECTION -->
+        <div class="section-header">
+          <div class="section-title">Latest Reviews</div>
+          <a href="#" class="see-all">See All &rsaquo;</a>
+        </div>
+
+        <div class="content-tabs" id="reviewTabs">
+          <div class="content-tab active" data-tab="all">All Reviews</div>
+          <div class="content-tab" data-tab="pc">PC</div>
+          <div class="content-tab" data-tab="ps">PlayStation</div>
+          <div class="content-tab" data-tab="xbox">Xbox</div>
+          <div class="content-tab" data-tab="nintendo">Nintendo</div>
+          <div class="content-tab" data-tab="mobile">Mobile</div>
+        </div>
+
+        <div class="article-grid" id="reviewsGrid"></div>
+
+        <!-- NEWS SECTION -->
+        <div class="section-header">
+          <div class="section-title">Gaming News</div>
+          <a href="#" class="see-all">See All &rsaquo;</a>
+        </div>
+
+        <div class="article-grid" id="newsGrid"></div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <!-- TRENDING -->
+        <div class="sidebar-section">
+          <div class="sidebar-head">&#128293; Trending Now</div>
+          <div id="trendingList"></div>
+        </div>
+
+        <div class="ad-banner" style="margin-bottom:14px">ADVERTISEMENT</div>
+
+        <!-- TOP RATED -->
+        <div class="sidebar-section">
+          <div class="sidebar-head">&#11088; Top Rated This Month</div>
+          <div id="topRatedList"></div>
+        </div>
+
+        <!-- GENRE BROWSER -->
+        <div class="sidebar-section">
+          <div class="sidebar-head">Browse by Genre</div>
+          <div class="genre-grid" id="genreGrid"></div>
+        </div>
+
+        <!-- COMING SOON -->
+        <div class="sidebar-section">
+          <div class="sidebar-head">&#128197; Coming Soon</div>
+          <div id="comingSoonList"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-title" id="modalTitle">Now Playing</span>
+        <button class="modal-close" id="modalClose">&#10005;</button>
+      </div>
+      <div class="modal-video">
+        <div class="modal-player">
+          <div class="modal-play-icon">&#9654;</div>
+          <p id="modalDesc">Video playing...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">NEXUS<span>GAMING</span></div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>NexusGaming</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Advertise</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Content</h4>
+          <a href="#">Videos</a>
+          <a href="#">Reviews</a>
+          <a href="#">Trailers</a>
+          <a href="#">News</a>
+          <a href="#">Esports</a>
+        </div>
+        <div class="footer-col">
+          <h4>Platforms</h4>
+          <a href="#">PC</a>
+          <a href="#">PlayStation</a>
+          <a href="#">Xbox</a>
+          <a href="#">Nintendo</a>
+          <a href="#">Mobile</a>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="#">Forums</a>
+          <a href="#">Discord</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+          <a href="#">Newsletter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 NexusGaming. All rights reserved.</div>
+        <div>
+          <a href="#" style="color:#444;margin-left:14px">Privacy Policy</a>
+          <a href="#" style="color:#444;margin-left:14px">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
