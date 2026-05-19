@@ -87,6 +87,7 @@ header {
   letter-spacing: -1px;
 }
 .logo span { color: #e60012; }
+.logo .brand-country { color: #5ae0e0; }
 
 .search-bar {
   display: flex;
@@ -227,6 +228,7 @@ footer {
   margin-bottom: 20px;
 }
 .footer-logo span { color: #e60012; }
+.footer-logo .brand-country { color: #5ae0e0; }
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
